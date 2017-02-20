@@ -2,23 +2,23 @@
 
 class RockPaper
 
-def initialize
-  @array = ["rock", "paper", "scissors"]
-end
+# def initialize
+#   # @array = ["rock", "paper", "scissors"]
+# end
 
 
 def play(choice1, choice2)
 
-choice1_include = @array.include? choice1
-choice2_include = @array.include? choice2
-@valid = choice1_include and choice2_include
+choice1.downcase!
+choice2.downcase!
+array = ["rock", "paper", "scissors"]
 
-if @valid == false
-  return "You must choose Rock, Paper or Scissors"
+if array.include?(choice1) == false or array.include?(choice2) == false
+  return "you didn't choose Rock, Paper or Scissors!! Try again."
  elsif choice1 != choice2
   choices = [choice1, choice2]
-  @array = @array - choices
-  case @array
+  array = array - choices
+  case array
   when ["scissors"]
     return "Paper Wins!"
   when ["paper"]
