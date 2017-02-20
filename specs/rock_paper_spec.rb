@@ -24,7 +24,7 @@ assert_equal("Draw!", @rockpaper.play("Paper", "Paper"))
 end
 
 def test_invalid
-assert_equal("You must choose Rock, Paper or Scissors", @rockpaper.play("Lizard", "Spock"))
+assert_equal("you didn't choose Rock, Paper or Scissors!! Try again.", @rockpaper.play("Lizard", "Spock"))
 end
 
 
