@@ -4,8 +4,8 @@ require('pry')
 require_relative('./models/rock_paper.rb')
 require('json')
 
-get '/' do 
-return "Hello"
+get '/rock_paper_scissors/welcome' do 
+erb(:welcome)
 end
 
 get '/rock_paper_scissors/:choice1/:choice2' do
