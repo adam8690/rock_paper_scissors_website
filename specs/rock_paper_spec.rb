@@ -4,7 +4,7 @@ require_relative '../models/rock_paper.rb'
 class TestRockPaper < Minitest::Test
 
 def setup
-  @rockpaper = RockPaper.new
+  @rockpaper = RockPaper.new()
 end
 
 def test_paper_rock

@@ -3,7 +3,7 @@
 class RockPaper
 
 def initialize
-  @array = ["Rock", "Paper", "Scissors"]
+  @array = ["rock", "paper", "scissors"]
 end
 
 
@@ -19,11 +19,11 @@ if @valid == false
   choices = [choice1, choice2]
   @array = @array - choices
   case @array
-  when ["Scissors"]
+  when ["scissors"]
     return "Paper Wins!"
-  when ["Paper"]
+  when ["paper"]
     return "Rock Wins!"
-  when ["Rock"]
+  when ["rock"]
     return "Scissors Wins!"
   end
   else
